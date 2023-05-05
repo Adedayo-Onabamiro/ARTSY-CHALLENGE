@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../productPage/productPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ARTSY CHALLENGE</title>
+</head>
+<body>
+
+<!-- START of TOP NAV -->
+<div class="topNavBox">
+  <div class="topNav">
+      <div class="hamburger"> <div class="bar"></div> </div>
+      <h3 class="LogoText">ARTSY.</h3>
+      <ul class="NavUL">
+          <li class="NavLi"><a href="../homePage/Home.html"> Home  </a></li>
+          <li class="NavLi"><a href="../productPage/productPage.html"> Marketplace </a> </li>
+          <li class="NavLi"><a  href="../auctionPage/auctionPage.html">Auction</a> </li>
+          <li class="NavLi"><a href="../dropPage/dropPage.html">Drop</a> </li>
+      </ul>
+
+      <ul class="NavIconsUl">
+          <li class="NavIconsLi"> <img class="NavIconImg N1" src="../images/Search icon.png">  </li> 
+          <li class="NavIconsLi"> <img class="NavIconImg N2" src="../images/Cart icon.png">  </li> 
+          <li class="NavIconsLi"> <img class="NavIconImg N3" src="../images/Notification icon.png"> </li> 
+      </ul>
+  </div>
+</div>
+<!-- End of TOP NAV -->
+
+<!-- mobile version for top of screen ends-->
+<div class="MobileView">
+  <p class="SoloText">Home/ Marketplace/ Editorials/ Philomena '22</p>
+  <p>Showing 1-5 of 18 results</p>
+
+  <div class="MobilefilterSortBox">
+    <button class="MobilefilterSortButton"> Filters <img src="../images/caretDown.png"> </button>
+    <button class="MobilefilterSortButton"> Sort by <img src="../images/caretDown.png"> </button>
+  </div>
+</div>
+<!-- mobile version for top of screen ends -->
+
+<!--START OF SEARCH BAR SECTION-->
+<div class="SearchBarBox">
+  <input type="search" placeholder="Search">
+        <div class="SortbySection">
+          <p>See 1-6 of 15 results</p>
+
+          <!-- <button class="SortByButton">  
+          </button> -->
+          <form>  
+            <select id = "myList" onchange = "favTutorial()" >  
+            <option> Sort by</option>  
+            <option> Popularity </option>  
+            <option> Price: high to low </option>  
+            <option> Price: low to high </option>  
+            <option> Average Ratings </option>  
+            </select>  
+            </form>  
+      </div>
+</div>
+<!--END OF SEARCH BAR SECTION-->
+
+
+<!--START OF WHOLE BODY DIVISION INTO TWO SIDES LEFT AND RIGHT-->
+    <div class="DIVISIONBODY">
+
+      <div class="DIVISION1">
+        <h3 class="filter"> <img src="../images/toolIcon.png" style="height: 25px;" width="25px"> Filter</h3>
+
+        <!-- by category -->
+        <div class="FilterOptions">
+          <div class="Sections">
+            <div class="SectionContentBox">
+                <h3>By category</h3>
+                <img  onclick="Bycategory()" class="dropbtn" src="../images/caretDown.png">
+            </div>
+            <div id="CategoryDropdown" class="dropdown-content">
+              <div class="checkLists">
+                <form action="/action_page.php">
+                    <input type="checkbox" id="Option1" name="Option1" value="Editorials">
+                    <label for="Option1"> Editorials</label><br>
+    
+                    <input type="checkbox" id="Option2" name="Option2" value="Fashion">
+                    <label for="Option2"> Fashion</label><br>
+    
+                    <input type="checkbox" id="Option3" name="Option3" value="Optics">
+                    <label for="Option3"> Optics</label><br>
+    
+                    <input type="checkbox" id="Option4" name="Option4" value="Art & Museum">
+                    <label for="Option4"> Art & Museum</label><br>
+    
+                    <input type="checkbox" id="Option5" name="Option5" value="Nature">
+                    <label for="Option5"> Nature</label><br>
+                  </form>
+              </div>
+            </div> 
+        </div>
+        </div>
+
+        <!-- by price -->
+        <div class="FilterOptions">
+          <div class="Sections">
+            <div class="SectionContentBox">
+                <h3>By price</h3>
+                <img  onclick="Byprice()" class="dropbtn" src="../images/caretDown.png">
+            </div>
+            <div id="PriceDropdown" class="dropdown-content">
+              <h4> $100.00 - $150.00 </h4>
+
+              <!--RangeSlider Start-->
+              <div class="range">
+                <div class="range-slider">
+                  <span class="range-selected"></span>
+                </div>
+                <div class="range-input">
+                  <input type="range" class="min" min="0" max="1000" value="300" step="10">
+                  <input type="range" class="max" min="0" max="1000" value="700" step="10">
+                </div>
+              </div> 
+              <!--RangeSlider End-->
+            </div> 
+        </div>
+        </div>
+
+        <div class="FilterOptions">
+          <div class="Sections">
+            <div class="SectionContentBox">
+                <h3>By artist</h3>
+                <img  onclick="Byartist()" class="dropbtn" src="../images/caretDown.png">
+            </div>
+            <div id="artistDropdown" class="dropdown-content">
+              <h4 style="border-bottom: 1px solid black; width: 30px; margin: 0;" > All </h4>
+
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li> <h4> Below $100.00 </h4> </li>
+                <li> <h4> $100.00 - $150.00 </h4> </li>
+                <li> <h4> $150.00 - $200.00 </h4> </li>
+                <li> <h4> Above $200.00 </h4> </li>
+              </Ul>
+            </div> 
+        </div>
+        </div>
+      </div>
+
+
+        <div class="DIVISION2">
+
+          <div class="grid-container">
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a href="/productDetail/productDetail.html">
+                      <img src="../images/Rectangle 251.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">PHILOMENTA '22</p>
+                    <p class="price">$3.90</p>
+                  </div>
+              </Div>
+            </div>
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a href="/productDetail/productDetail.html">
+                      <img src="../images/Rectangle 299.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">BOOLEAN EGYPTIAN</p>
+                    <p class="price">$3.90</p>
+                  </div>
+            </Div>
+            </div>
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a href="/productDetail/productDetail.html">
+                      <img src="../images/Rectangle 49.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">BLANC</p>
+                    <p class="price">$3.90</p>
+                  </div>
+            </Div>
+            </div>
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a href="/productDetail/productDetail.html">
+                      <img src="../images/Rectangle 53.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">ELLIPSIA</p>
+                    <p class="price">$3.90</p>
+                  </div>
+            </Div>
+            </div>
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a href="/productDetail/productDetail.html">
+                      <img src="../images/Rectangle 54.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">THE LAWMAKERS</p>
+                    <p class="price">$3.90</p>
+                  </div>
+            </Div>
+            </div>
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a href="/productDetail/productDetail.html">
+                      <img src="../images/Rectangle 50.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">VEIL</p>
+                    <p class="price">$3.90</p>
+                  </div>
+            </Div>
+            </div>  
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a target="_blank" href="../images/Rectangle 48.png">
+                      <img src="../images/Rectangle 48.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">ALTERNATING</p>
+                    <p class="price">$3.90</p>
+                  </div>
+            </Div>
+            </div>
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a target="_blank" href="../images/Rectangle 52.png">
+                      <img src="../images/Rectangle 52.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">ROSEMARY '22</p>
+                    <p class="price">$3.90</p>
+                  </div>
+            </Div>
+            </div>
+
+            <div class="grid-item">
+              <Div class="priceCard">
+                <div class="gallery">
+                    <a target="_blank" href="../images/Rectangle 55.png">
+                      <img src="../images/Rectangle 55.png" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <p class="desc">BEVERLY</p>
+                    <p class="price">$3.90</p>
+                  </div>
+            </Div>
+            </div>  
+
+          </div>
+
+    
+  
+    
+
+    
+        </div>
+
+    </div>
+    
+<!--END OF WHOLE BODY DIVISION INTO TWO SIDES LEFT AND RIGHT-->
+
+    <div class="bottomCont">
+      <button class="SeeMore"> See More </button>
+    </div>
+
+<script src="../productPage/productPage.js"></script>
+</body>
+</html>

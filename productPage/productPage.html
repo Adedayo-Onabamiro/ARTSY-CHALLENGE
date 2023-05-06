@@ -109,17 +109,33 @@
                 <img  onclick="Byprice()" class="dropbtn" src="../images/caretDown.png">
             </div>
             <div id="PriceDropdown" class="dropdown-content">
-              <h4> $100.00 - $150.00 </h4>
-
+              <div class="priceRangeValues">  
+                <div class="values">
+                  <div class="wrapper" id="wrapper">
+                    <span>$0</span>
+                    <span>$10</span>
+                    <span>$20</span>
+                    <span>$30</span>
+                    <span>$40</span>
+                    <span>$50</span>
+                    <span>$60</span>
+                    <span>$70</span>
+                    <span>$80</span>
+                    <span>$90</span>
+                    <span>$100</span>
+                    <span>$110</span>
+                    <span>$120</span>
+                    <span>$130</span>
+                    <span>$140</span>
+                    <span>$150</span>
+                  </div>
+                </div>
+                <p> - </p>
+                <p>$150.00</p>
+              </div>
               <!--RangeSlider Start-->
               <div class="range">
-                <div class="range-slider">
-                  <span class="range-selected"></span>
-                </div>
-                <div class="range-input">
-                  <input type="range" class="min" min="0" max="1000" value="300" step="10">
-                  <input type="range" class="max" min="0" max="1000" value="700" step="10">
-                </div>
+                  <input type="range" min="0" max="15" value="0" id="slider">
               </div> 
               <!--RangeSlider End-->
             </div> 

@@ -298,56 +298,65 @@ body{
     font-size: 20px;
     accent-color: #D9D9D9;
 }
-
+.priceRangeValues{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
 /*RangeSlider Start*/
 .range{
-    min-height: 50px;
+    height: 100px;
     width: 90%;
+	border-radius: 5px;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-.range-slider {
-    height: 5px;
-    position: relative;
-    background-color: #B8BCB5;
-    border-radius: 2px;
+input[type="range"]{
+	width: 100%;
+	height: 3.5px;
+	-webkit-appearance: none;
+	background-color: #dcdcdc;
+	border-radius: 3px;
+	outline: none;
 }
-.range-selected {
-    height: 100%;
-    left: 30%;
-    right: 30%;
-    position: absolute;
-    border-radius: 5px;
-    background-color: #333333;
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	height: 20px;
+	width: 20px;
+	background-color: #1c1c1c;
+	cursor: pointer;
+	border-radius: 50%;
 }
-.range-input {
-    position: relative;
+input[type="range"]:active::-webkit-slider-thumb{
+	background-color:white;
+	border: 5px solid #1c1c1c; 
 }
-.range-input input {
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    top: -7px;
-    background: none;
-    pointer-events: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+.values{
+	width: 30%;
+	height: 40px;
+	position: relative;
+	overflow: hidden;
 }
-.range-input input::-webkit-slider-thumb {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 3px solid #333333;
-    background-color: #333333;
-    pointer-events: auto;
-    -webkit-appearance: none;
+.wrapper{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transition: 0.3s;
 }
-.range-input input::-moz-range-thumb {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: 3px solid #333333;
-    background-color: #333333;
-    pointer-events: auto;
-    -moz-appearance: none;
+span{
+	display: block;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
 
 /*RangeSlider End*/

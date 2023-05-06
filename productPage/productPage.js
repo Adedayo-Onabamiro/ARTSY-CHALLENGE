@@ -49,46 +49,11 @@ function reveal() {
 //END OF HAMBURGER MENU
 
 // code for slider starts
-let rangeMin = 100;
-const range = document.querySelector(".range-selected");
-const rangeInput = document.querySelectorAll(".range-input input");
-const rangePrice = document.querySelectorAll(".range-price input");
-
-rangeInput.forEach((input) => {
-    input.addEventListener("input", (e) => {
-      let minRange = parseInt(rangeInput[0].value);
-      let maxRange = parseInt(rangeInput[1].value);
-      if (maxRange - minRange < rangeMin) {     
-        if (e.target.className === "min") {
-          rangeInput[0].value = maxRange - rangeMin;        
-        } else {
-          rangeInput[1].value = minRange + rangeMin;        
-        }
-      } else {
-        rangePrice[0].value = minRange;
-        rangePrice[1].value = maxRange;
-        range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
-        range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
-      }
-    });
-  });
-
-  rangePrice.forEach((input) => {
-    input.addEventListener("input", (e) => {
-      let minPrice = rangePrice[0].value;
-      let maxPrice = rangePrice[1].value;
-      if (maxPrice - minPrice >= rangeMin && maxPrice <= rangeInput[1].max) {
-        if (e.target.className === "min") {
-          rangeInput[0].value = minPrice;
-          range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-        } else {
-          rangeInput[1].value = maxPrice;
-          range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-        }
-      }
-    });
-  });
-
+var slider=document.getElementById("slider");
+		var values=document.getElementById("wrapper");
+		slider.oninput=function(){
+			values.style.bottom=slider.value*40+"px";
+		}
 // code for slider ends
 
 /* When the user clicks on the button, 
@@ -106,18 +71,18 @@ function Byartist() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
 //code for dropdown in filter section 
 
 function favTutorial() {  

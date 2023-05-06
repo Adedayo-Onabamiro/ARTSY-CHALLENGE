@@ -170,21 +170,17 @@
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a href="/productDetail/productDetail.html">
                       <img src="../images/Rectangle 251.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">PHILOMENTA '22</p>
                     <p class="price">$3.90</p>
-                  </div>
+                </div>
               </Div>
             </div>
 
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a href="/productDetail/productDetail.html">
                       <img src="../images/Rectangle 299.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">BOOLEAN EGYPTIAN</p>
                     <p class="price">$3.90</p>
                   </div>
@@ -194,9 +190,7 @@
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a href="/productDetail/productDetail.html">
                       <img src="../images/Rectangle 49.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">BLANC</p>
                     <p class="price">$3.90</p>
                   </div>
@@ -206,9 +200,7 @@
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a href="/productDetail/productDetail.html">
                       <img src="../images/Rectangle 53.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">ELLIPSIA</p>
                     <p class="price">$3.90</p>
                   </div>
@@ -218,9 +210,7 @@
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a href="/productDetail/productDetail.html">
                       <img src="../images/Rectangle 54.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">THE LAWMAKERS</p>
                     <p class="price">$3.90</p>
                   </div>
@@ -230,9 +220,7 @@
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a href="/productDetail/productDetail.html">
                       <img src="../images/Rectangle 50.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">VEIL</p>
                     <p class="price">$3.90</p>
                   </div>
@@ -242,9 +230,7 @@
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a target="_blank" href="../images/Rectangle 48.png">
                       <img src="../images/Rectangle 48.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">ALTERNATING</p>
                     <p class="price">$3.90</p>
                   </div>
@@ -254,9 +240,7 @@
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a target="_blank" href="../images/Rectangle 52.png">
                       <img src="../images/Rectangle 52.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">ROSEMARY '22</p>
                     <p class="price">$3.90</p>
                   </div>
@@ -266,9 +250,7 @@
             <div class="grid-item">
               <Div class="priceCard">
                 <div class="gallery">
-                    <a target="_blank" href="../images/Rectangle 55.png">
                       <img src="../images/Rectangle 55.png" alt="Cinque Terre" width="600" height="400">
-                    </a>
                     <p class="desc">BEVERLY</p>
                     <p class="price">$3.90</p>
                   </div>
@@ -276,11 +258,6 @@
             </div>  
 
           </div>
-
-    
-  
-    
-
     
         </div>
 
@@ -289,8 +266,203 @@
 <!--END OF WHOLE BODY DIVISION INTO TWO SIDES LEFT AND RIGHT-->
 
     <div class="bottomCont">
-      <button class="SeeMore"> See More </button>
+      <button id="bottomSeeMoreBtn" class="SeeMore"> See More </button>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <!--START OF PRODUCT DETAIL-->
+              <p class="SoloText" style="padding: 0 10%;">Home/ Marketplace/ Editorials/ Philomena '22</p>
+
+              <div class="productBox">
+                  <div class="Box1">
+                  </div>
+                  <div class="Box2">
+                      <div class="Sections">
+                          <h1 class="title">Boolean Egyptian</h1>
+                      </div>
+                      <div class="Sections">
+                          <p>Creator Ali Dawa</p>
+                          <P>Made in Italy</P>
+                          <h3>Total views: 1.7K views</h3>
+                          <h3>- 1 +</h3>
+                          <div class="addToBox">
+                              <button class="placeBidButton"> Add to Cart → </button>
+                              <button class="favoriteButton"> 
+                                <i onclick="toggleLike(this)" class="fa fa-heart-o"></i>
+                              </button>
+                          </div>
+                      </div>
+                      <div class="Sections">
+                          <div class="SectionContentBox">
+                              <h3>Description</h3>
+                              <img  onclick="DescriptionFunction()" class="dropbtn" src="../images/caretDown.png">
+                          </div>
+                          <div id="DescriptionDropdown" class="dropdown-content">
+                              <p>
+                                  Lorem ipsum dolor sit amet consectetur,
+                                  adipisicing elit. Blanditiis aspernatur quia, omnis est maiores nisi corporis
+                                    sunt impedit esse, delectus reprehenderit consequatur minima ex molestias neque,
+                                    commodi laboriosam quae veritatis!
+                              </p>
+                          </div> 
+                      </div>
+                      <div class="Sections">
+                          <div class="SectionContentBox">
+                              <h3>Listing</h3>
+                              <img  onclick="ListingFunction()" class="dropbtn" src="../images/caretDown.png">
+                          </div>
+                          <div id="ListingDropdown" class="dropdown-content">
+                              <p>
+                                  Lorem ipsum dolor sit amet consectetur,
+                                  adipisicing elit. Blanditiis aspernatur quia, omnis est maiores nisi corporis
+                                    sunt impedit esse, delectus reprehenderit consequatur minima ex molestias neque,
+                                    commodi laboriosam quae veritatis!
+                              </p>
+                          </div> 
+                      </div>
+                      <div class="Sections">
+                          <div class="SectionContentBox">
+                              <h3>Status</h3>
+                              <img  onclick="StatusFunction()" class="dropbtn" src="../images/caretDown.png">
+                          </div>
+                          <div id="StatusDropdown" class="dropdown-content">
+                              <p>
+                                  Lorem ipsum dolor sit amet consectetur,
+                                  adipisicing elit. Blanditiis aspernatur quia, omnis est maiores nisi corporis
+                                    sunt impedit esse, delectus reprehenderit consequatur minima ex molestias neque,
+                                    commodi laboriosam quae veritatis!
+                              </p>
+                          </div> 
+                      </div>
+                  </div>
+              </div>
+
+              <div class="ExploreMoreContainer">
+                  <p>Explore more from this collection</p>
+
+                  <div class="ButtonContainer">
+                      <button class="Btn">
+                          <a class="prev"> ❮ </a>
+                      </button>
+                      <button class="Btn">
+                          <a class="next"> ❯ </a>
+                      </button>
+                  </div>
+              </div>
+
+              <div class="SlideshowBox">
+                  <div class="slider-container">
+                    <div class="slider-wrapper">
+                      <div class="slider-item">
+                          <div class="favoriteBox">
+                              <i onclick="toggleLike(this)" class="fa fa-heart-o"></i>
+                          </div>
+                          <div class="imageBox">
+                              <img src="../images/pd Rectangle 65.png">
+                          </div>
+                              <div class="infoBox">
+                                  <p>Sassy</p>
+                                  <p> <img src="../images/diamond.png"> 3.20 </p>
+                              </div>
+                      </div>
+
+                      <div class="slider-item">
+                          <div class="favoriteBox">
+                              <i onclick="toggleLike(this)" class="fa fa-heart-o"></i>
+                          </div>
+                          <div class="imageBox">
+                              <img src="../images/pd Rectangle 66.png">
+                          </div>
+                              <div class="infoBox">
+                                  <p>Sassy</p>
+                                  <p> <img src="../images/diamond.png"> 3.20 </p>
+                              </div>
+                      </div>
+
+                      <div class="slider-item">
+                          <div class="favoriteBox">
+                              <i onclick="toggleLike(this)" class="fa fa-heart-o"></i>
+                          </div>
+                          <div class="imageBox">
+                              <img src="../images/Rectangle 251.png">
+                          </div>
+                              <div class="infoBox">
+                                  <p>Sassy</p>
+                                  <p> <img src="../images/diamond.png"> 3.20 </p>
+                              </div>
+                      </div>
+
+                      <div class="slider-item">
+                        <div class="favoriteBox">
+                            <i onclick="toggleLike(this)" class="fa fa-heart-o"></i>
+                        </div>
+                        <div class="imageBox">
+                            <img src="../images/pd Rectangle 65.png">
+                        </div>
+                            <div class="infoBox">
+                                <p>Sassy</p>
+                                <p> <img src="../images/diamond.png"> 3.20 </p>
+                            </div>
+                    </div>
+
+                      <div class="slider-item">
+                          <div class="favoriteBox">
+                              <i onclick="toggleLike(this)" class="fa fa-heart-o"></i>
+                          </div>
+                          <div class="imageBox">
+                              <img src="../images/Rectangle 53.png">
+                          </div>
+                              <div class="infoBox">
+                                  <p>Sassy</p>
+                                  <p> <img src="../images/diamond.png"> 3.20 </p>
+                              </div>
+                      </div>
+
+                      <div class="slider-item">
+                          <div class="favoriteBox">
+                            <i onclick="toggleLike(this)" class="fa fa-heart-o"></i>
+                          </div>
+                          <div class="imageBox">
+                              <img src="../images/Rectangle 247.png">
+                          </div>
+                              <div class="infoBox">
+                                  <p>Sassy</p>
+                                  <p> <img src="../images/diamond.png"> 3.20 </p>
+                              </div>
+                      </div>
+
+                      <div class="slider-item">
+                        <div class="favoriteBox">
+                          <i onclick="toggleLike(this)" class="fa fa-heart-o"></i>
+                        </div>
+                        <div class="imageBox">
+                            <img src="../images/pd Rectangle 66.png">
+                        </div>
+                            <div class="infoBox">
+                                <p>Sassy</p>
+                                <p> <img src="../images/diamond.png"> 3.20 </p>
+                            </div>
+                    </div>
+
+                    </div>
+                  </div>
+                
+              </div>
+
+              <div class="footerButtonBox">
+                  <button class="exploreAll" data="Explore all"> </button>    
+              </div>
+          <!--END OF PRODUCT DETAIL-->
+      </div>
+
+    </div>
+    <!-- The Modal -->
+
 
 <script src="../productPage/productPage.js"></script>
 </body>

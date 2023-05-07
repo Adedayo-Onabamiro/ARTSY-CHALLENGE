@@ -250,8 +250,6 @@ function showSlides(n) {
 //START OF AUCTION SLIDER CODE
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
-
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
   output.innerHTML = this.value;
@@ -260,8 +258,6 @@ slider.oninput = function() {
 //START OF TOP CREATOR SLIDER CODE
 var TCslider = document.getElementById("ScrollmyRange");
 var TCoutput = document.getElementById("Scrolldemo");
-TCoutput.innerHTML = TCslider.value; // Display the default slider value
-
 // Update the current slider value (each time you drag the slider handle)
 TCslider.oninput = function() {
   TCoutput.innerHTML = this.value;

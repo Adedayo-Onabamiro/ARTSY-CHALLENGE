@@ -136,23 +136,10 @@ body{
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     box-shadow: 0px 0px 4px rgb(233, 229, 229);
 }
-.MobilefilterSortButton{
-    padding: 10px 30px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid black;
-    font-size: large;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.MobilefilterSortButton img{
-    margin-left:10px;
+.MobilefilterSortBox form{
+    margin-bottom: 2%;
 }
 /*START OF SEARC BOX SECTION*/
 .SearchBarBox{

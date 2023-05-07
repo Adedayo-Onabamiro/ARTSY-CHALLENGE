@@ -37,8 +37,24 @@
   <p>Showing 1-5 of 18 results</p>
 
   <div class="MobilefilterSortBox">
-    <button class="MobilefilterSortButton"> Filters <img src="../images/caretDown.png"> </button>
-    <button class="MobilefilterSortButton"> Sort by <img src="../images/caretDown.png"> </button>
+    <form>  
+      <select id = "myList" onchange = "favTutorial()" >  
+      <option> Filters</option>  
+      <option> Category </option>  
+      <option> Price </option>  
+      <option> Artist</option>   
+      </select>  
+    </form>  
+
+    <form>  
+      <select id = "myList" onchange = "favTutorial()" >  
+      <option> Sort by</option>  
+      <option> Category </option>  
+      <option> Price </option>  
+      <option> Artist</option>   
+      </select>  
+    </form>  
+    <!-- <button class="MobilefilterSortButton"> Sort by <img src="../images/caretDown.png"> </button> -->
   </div>
 </div>
 <!-- mobile version for top of screen ends -->
